@@ -12,16 +12,10 @@ class UserInterface {
     //Method to display existing tasks 
     static displayTask() {
         const taskList = [{
-                task: "Send E-mails",
-                name: "Mazen Abdul",
-                date: "2020-08-24"
-            },
-            {
-                task: "Complete presentation for meeting",
-                name: "John Doe",
-                date: "2020-08-28"
-            }
-        ]
+            task: "(Example) Reply to Jane Doe's Email",
+            name: "Mazen Abdul",
+            date: "2020-08-24"
+        }]
 
         const tasks = taskList
         tasks.forEach((task) => {
@@ -108,8 +102,6 @@ form.addEventListener("submit", () => {
         //Display an Alert message of "Task Added Successfully!"
         UserInterface.alert("Task added successfully!", "success")
     }
-
-
 })
 
 //Event to trigger a remove task method via click 
